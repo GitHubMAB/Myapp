@@ -8,9 +8,20 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
-        
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        // Core library
+        classpath 'androidx.test:core:1.2.0'
+
+        // AndroidJUnitRunner and JUnit Rules
+        classpath 'androidx.test:runner:1.2.0'
+        classpath 'androidx.test:rules:1.2.0'
+
+        // Assertions
+        classpath 'androidx.test.ext:junit:1.1.1'
+        classpath 'androidx.test.ext:truth:1.2.0'
+        classpath 'com.google.truth:truth:0.42'
+
+        // Espresso dependencies
+        classpath 'androidx.test.espresso:espresso-core:3.2.0'
     }
 }
 
